@@ -23,12 +23,9 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <div class="col-md-12">
-
-       <button type="button" href="{{route('asistencia.create')}}" class="btn btn-outline-success btn-rounded waves-effect btn-lg"><i class="fas fa-solid fa-clipboard-list pr-2"
-           aria-hidden="true"></i>Agregar Nueva Asistencia</button>
-
     
-           <a href="{{route('asistencia.create')}}">crear cursos</a>
+           <a href="{{route('asistencia.create')}}" class="btn btn-outline-success btn-rounded waves-effect btn-lg"><i class="fas fa-solid fa-clipboard-list pr-2"
+            aria-hidden="true"></i>Agregar Nueva Asistencia</a>
            
        
    </div>
