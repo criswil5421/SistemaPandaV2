@@ -271,59 +271,69 @@ return [
         ['header' => 'Item'],
         [
             'text' => 'Ventas',
-            'url'  => 'dash/crud',
+            'route'  => 'venta.index',
             'icon' => 'fas fa-fw fa-store',
             
         ],
         [
             'text' => 'Clientes',
-            'route'  => 'asistencia.index',
+            'route'  => 'cliente.index',
             'icon' => 'fas fa-fw fa-restroom',
         ],
         [
             'text' => 'Trabajadores',
-            'url'  => 'admin/settings',
+            'route'  => 'trabajador.index',
             'icon' => 'fas fa-fw fa-street-view',
         ],
-
         [
-            'text'    => 'Productos',
-            'icon'    => 'fas fa-fw fa-toilet-paper',
-            'submenu' => [
-                [
-                    'text' => 'Materia Prima',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
+            'text' => 'Asistencia',
+            'route'  => 'asistencia.index',
+            'icon' => 'fas fa-fw fa-street-view',
         ],
+        [
+            'text' => 'producto',
+            'route'  => 'producto.index',
+            'icon' => 'fas fa-fw fa-toilet-paper',
+        ],
+
+        // [
+        //     'text'    => 'Productos',
+        //     'icon'    => 'fas fa-fw fa-toilet-paper',
+        //     'submenu' => [
+        //         [
+        //             'text' => 'Materia Prima',
+        //             'url'  => '#',
+        //         ],
+        //         [
+        //             'text'    => 'level_one',
+        //             'url'     => '#',
+        //             'submenu' => [
+        //                 [
+        //                     'text' => 'level_two',
+        //                     'url'  => '#',
+        //                 ],
+        //                 [
+        //                     'text'    => 'level_two',
+        //                     'url'     => '#',
+        //                     'submenu' => [
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url'  => '#',
+        //                         ],
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url'  => '#',
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //         ],
+        //         [
+        //             'text' => 'level_one',
+        //             'url'  => '#',
+        //         ],
+        //     ],
+        // ],
         ['header' => 'labels'],
         [
             'text'       => 'important',

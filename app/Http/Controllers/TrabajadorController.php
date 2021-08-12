@@ -64,7 +64,8 @@ class TrabajadorController extends Controller
 
     }
 
-    public function destroy(trabajador $trabajador){
+    public function destroy($id){
+        $trabajador = trabajador::find($id);
         $trabajador->delete();
 
         return redirect()->route('trabajador.index', $trabajador);

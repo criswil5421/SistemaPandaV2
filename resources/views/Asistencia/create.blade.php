@@ -4,54 +4,30 @@
   
 
 @section('content_header')
-    <h1>Dashboard ventas</h1>
+    <h1>Asistencia Create</h1>
 @stop
 
 @section('content')
-    <h1>bienvenido a la pagina para crear cursos</h1>
     <form action="{{route('asistencia.store')}}" method="POST">
-        
+
         @csrf
 
-        <label for="">
-            trabajador_id: 
-            <br>
-            <input type="text" name="trabajador_id" value="{{old('trabajador_id')}}">
-        </label>
-
-        @error('trabajador_id')
-            <br>
-            <small>*{{$message}}</small>
-            <br>
-        @enderror
-
-        <label for="">
-            estado: 
-            <br>
-            <textarea rows="5" name="estado">{{old('estado')}}</textarea>
-        </label>
-
-        @error('estado')
-            <br>
-            <small>*{{$message}}</small>
-            <br>
-        @enderror
-
-        <label for="">
-            fecha: 
-            <br>
-            <input type="date" name="fecha" value="{{old('fecha')}}">
-        </label>
-
-        @error('fecha')
-            <br>
-            <small>*{{$message}}</small>
-            <br>
-        @enderror
-
-        <br>
-
-        <button type="submit">Enviar Formulario</button>
-    </form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">trabajador_id: </label>
+            <input type="text" name="trabajador_id" class="form-control" id="" value="{{old('name')}}" placeholder="trabajador">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Estado</label>
+            <input type="text" name="estado" class="form-control" id="" value="{{old('estado')}}" placeholder="estado">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">fecha: </label>
+            <input type="date" name="fecha" class="form-control" id="" value="{{old('fecha')}}" placeholder="fecha">
+          </div>
+        
+        
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
     
 @endsection

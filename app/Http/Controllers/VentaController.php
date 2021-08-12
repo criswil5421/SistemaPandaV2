@@ -64,7 +64,14 @@ class VentaController extends Controller
 
     }
 
-    public function destroy(venta $venta){
+    // public function destroy(venta $venta){
+    //     $venta->delete();
+
+    //     return redirect()->route('venta.index', $venta);
+    // }
+
+    public function destroy($id){
+        $venta = venta::find($id);
         $venta->delete();
 
         return redirect()->route('venta.index', $venta);

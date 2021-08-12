@@ -44,13 +44,34 @@ Route::get('/dash/crud/ventadetalle', function () {
 
 
 Route::resource('asistencia', AsistenciaController::class);
+Route::get('asistencia/{asistencia}/destroy', [AsistenciaController::class, 'destroy'])->name('asistencia.destroy');
+
 Route::resource('cliente', ClienteController::class);
+Route::get('cliente/{cliente}/destroy', [ClienteController::class, 'destroy'])->name('cliente.destroy');
+
 Route::resource('permiso', PermisoController::class);
+Route::get('permiso/{permiso}/destroy', [PermisoController::class, 'destroy'])->name('permiso.destroy');
+
 Route::resource('PermisoRole', PermisoRoleController::class);
+Route::get('PermisoRole/{PermisoRole}/destroy', [PermisoRoleController::class, 'destroy'])->name('PermisoRole.destroy');
+
 Route::resource('producto', ProductoController::class);
+Route::get('producto/{producto}/destroy', [ProductoController::class, 'destroy'])->name('producto.destroy');
+
 Route::resource('role', RoleController::class);
+Route::get('role/{role}/destroy', [RoleController::class, 'destroy'])->name('role.destroy');
+
 Route::resource('trabajador', TrabajadorController::class);
+Route::get('trabajador/{trabajador}/destroy', [TrabajadorController::class, 'destroy'])->name('trabajador.destroy');
+
 Route::resource('trabajodetalle', TrabajoDetalleController::class);
+Route::get('trabajodetalle/{trabajodetalle}/destroy', [TrabajoDetalleController::class, 'destroy'])->name('trabajodetalle.destroy');
+
 Route::resource('user', UserController::class);
+Route::get('user/{user}/destroy', [UserController::class, 'destroy'])->name('user.destroy');
+
 Route::resource('venta', VentaController::class);
+Route::get('venta/{venta}/destroy', [VentaController::class, 'destroy'])->name('venta.destroy');
+
 Route::resource('ventadetalle', VentaDetalleController::class);
+Route::get('ventadetalle/{ventadetalle}/destroy', [VentaDetalleController::class, 'destroy'])->name('ventadetalle.destroy');

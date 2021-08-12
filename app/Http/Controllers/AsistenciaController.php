@@ -64,7 +64,8 @@ class AsistenciaController extends Controller
 
     }
 
-    public function destroy(Asistencia $asistencia){
+    public function destroy($id){
+        $asistencia = Asistencia::find($id);
         $asistencia->delete();
 
         return redirect()->route('asistencia.index', $asistencia);
